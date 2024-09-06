@@ -1,0 +1,21 @@
+{
+   "name": "ac-telemetry",
+   "version": "1.0.0",
+   "description": "Assetto Corsa Telemetry",
+   "main": "./src/scripts/index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "electron ."
+   },
+   "keywords": [
+      "assetto corsa",
+      "telemetry"
+   ],
+   "author": "rangarajanpraneeth",
+   "license": "ISC",
+   "dependencies": {
+      "@fynnix/node-easy-ipc": "^1.1.0",
+      "binutils": "^0.1.0",
+      "electron": "^32.0.2"
+   }
+}

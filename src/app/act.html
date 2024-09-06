@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Assetto Corsa Telemetry</title>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,0" />
+   <link rel="stylesheet" href="./common.css">
+</head>
+
+<!--
+GRAPHS
+clutch
+brake
+throttle
+rpm
+gear
+steering
+speed
+abs
+tc
+drs
+engine brake
+turbo
+
+GAUGES
+suspension
+tires
+hybrid
+steering/pedals
+speedometer/tachometer
+g force
+
+map
+g force
+-->
+
+<body>
+   <div class="container">
+      <div class="sidebar__icons">
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">folder_open</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">menu</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">ssid_chart</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">stacks</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">speed</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">map</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">videocam</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">file_copy</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">terminal</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">apps</span>
+         <span class="sidebar__icon material-symbols-rounded" onclick="prioritize('')">settings</span>
+      </div>
+
+
+
+      <div class="sidebar">
+
+
+
+         <div class="customize">
+            <div class="section">
+               <div class="heading">APPLICATIONS</div>
+               <div class="content">
+                  <div class="information"></div>
+               </div>
+            </div>
+            <div class="section hide">
+               <div class="heading">CHANNELS</div>
+               <div class="content">
+                  <div class="information"></div>
+               </div>
+            </div>
+            <div class="section hide">
+               <div class="heading">GAUGES</div>
+               <div class="content">
+                  <div class="information"></div>
+               </div>
+            </div>
+            <div class="section hide">
+               <div class="heading">MAP</div>
+               <div class="content">
+                  <div class="information"></div>
+               </div>
+            </div>
+            <div class="section hide">
+               <div class="heading">SETTINGS</div>
+               <div class="content">
+                  <div class="information"></div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="section">
+            <div class="heading">
+               LAPS
+            </div>
+            <div class="content">
+               <div class="information">
+                  <div class="lap fastest">
+                     <span class="lap__number">1</span>
+                     <span class="lap__time">01:31.000</span>
+                     <span class="lap__split">FASTEST</span>
+                  </div>
+                  <div class="lap">
+                     <span class="lap__number">5</span>
+                     <span class="lap__time">01:31.000</span>
+                     <span class="lap__split">+0.123</span>
+                  </div>
+                  <div class="lap">
+                     <span class="lap__number">10</span>
+                     <span class="lap__time">01:31.000</span>
+                     <span class="lap__split">+0.123</span>
+                  </div>
+                  <div class="lap">
+                     <span class="lap__number">15</span>
+                     <span class="lap__time">01:31.000</span>
+                     <span class="lap__split">+0.123</span>
+                  </div>
+                  <div class="lap">
+                     <span class="lap__number">99</span>
+                     <span class="lap__time">01:31.000</span>
+                     <span class="lap__split">+0.123</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="section">
+            <div class="heading">
+               RECORDING
+               <div class="recording__buttons">
+                  <div class="recording__button start" onclick="startRecording()"></div>
+                  <div class="recording__button pause" onclick="pauseRecording()"></div>
+                  <div class="recording__button stop" onclick="stopRecording()"></div>
+               </div>
+            </div>
+            <div class="content">
+               <div class="information">
+                  <div class="seperate">
+                     <span class="recording__status"></span>
+                     <span class="recording__length"></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="section">
+            <div class="heading">
+               SESSION
+               <span class="data__status"></span>
+            </div>
+            <div class="content">
+               <div class="information">
+                  <span class="data__session"></span>
+                  <div></div>
+                  <span class="data__driver"></span>
+                  <span class="data__car"></span>
+                  <span class="data__track"></span>
+               </div>
+               <div class="seperate">
+                  <span class="date"></span>
+                  <span class="time"></span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <div class="telemetry">
+         <div class="graphs">
+            <div class="graph"></div>
+            <div class="graph"></div>
+            <div class="graph"></div>
+            <div class="graph"></div>
+            <div class="graph"></div>
+            <div class="graph"></div>
+            <div class="graph"></div>
+            <div class="graph"></div>
+         </div>
+         <div class="graph"></div>
+         <div class="gauges">
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+         </div>
+      </div>
+      <div class="gauges__container">
+         <div class="gauges">
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+            <div class="gauge"></div>
+         </div>
+         <div class="gauge"></div>
+      </div>
+   </div>
+
+
+
+   <script src="../scripts/preload.js" defer></script>
+</body>
+
+</html>
