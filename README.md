@@ -7,7 +7,13 @@ ACT supports real time graphing and recording of telemetry data. It also has the
 ## Installation
 
 * Clone the library `git clone https://github.com/rangarajanpraneeth/ac-telemetry.git`
-
 * Install the dependencies `npm i`
-
 * Run the application `npm start`
+
+## Common Issues
+
+### Application is not receiving telemetry data
+Make sure Assetto Corsa is running
+
+### Application is receiving telemetry data slowly
+Make sure Assetto Corsa is already running before opening this application
