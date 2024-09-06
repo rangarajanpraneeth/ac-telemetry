@@ -2,7 +2,7 @@
 
 ## About
 
-ACT supports real time graphing and recording of telemetry data. It also has the ability to compare multiple recordings against each other. This application enables the user to analyze every aspect of their laps, allowing them to optimize their driving techniques and ultimately achieving faster lap times.
+ACT supports real time graphing and recording of telemetry data. It also has the ability to compare multiple recordings against each other. This enables the user to analyze every aspect of their laps, allowing them to optimize their driving techniques and ultimately achieving faster lap times.
 
 ## Installation
 
@@ -12,8 +12,4 @@ ACT supports real time graphing and recording of telemetry data. It also has the
 
 ## Common Issues
 
-### Application is not receiving telemetry data
-Make sure Assetto Corsa is running
-
-### Application is receiving telemetry data slowly
-Make sure Assetto Corsa is already running before opening this application
+Sometimes the application will receive telemetry data very slowly or it could be laggy. In order to fix this, make sure Assetto Corsa is always opened first before the application.
