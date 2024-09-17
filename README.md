@@ -12,4 +12,4 @@ ACT supports real time graphing and recording of telemetry data. It also has the
 
 ## Common Issues
 
-Sometimes the application will receive telemetry data very slowly or it could be laggy. In order to fix this, make sure Assetto Corsa is always opened first before the application.
+Make sure Assetto Corsa is always opened first before the application.
